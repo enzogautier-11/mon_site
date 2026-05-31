@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.name {
+  color : white;
+  text-align : right;
+  margin-left: auto;
+  margin-right: 30px;
+  font-size : 18px;
+  font-weight: 400;
+}
+
+* {
+  font-family : 'Montserrat';
+}
+
+header {
+  display : flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+header img {
+  width : 60px;
+  margin : 20px 40px;
+  height : auto;
+}
+
+body {
+  margin : 0 auto;
+}
+
+/* Debut pages */
+
+section.haut_page {
+  background-size : cover;
+  min-height: 40vh;
+  position: relative;
+}
+
+.page_poulailler {
+    background : url('../images/poulailler/porte-poulailler-v2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_alternance {
+    background : url('../images/Site_vitre.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*accueil*/
+
+.accueil_page,
+.accueil_site {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.scroll_down {
+  color : white;
+  position: absolute;
+  text-decoration: none;
+  left: 50px;
+  bottom: 10px;
+  font-size: 20px;
+}
+
+.titre_principal {
+  color : white;
+  font-size: 80px;
+  font-weight: 700;
+  font-family : 'Abril Fatface';
+  width : auto;
+  margin : 40px;
+
+}
+
+.titres_secondaires {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: 400;
+  font-family: "Playfair Display", "Georgia", serif;
+  position : relative;
+}
+
+.titres_secondaires::before {
+  content : '';
+  width : 150px;
+  height : 10px;
+  background-color : rgb(160, 160, 239);
+  position : absolute;
+  bottom : -10px;
+}
+
+.titres_3 {
+  font-size: 30px;
+  margin: 50px 100px;
+  font-weight: 400;
+  font-family: "Playfair Display", "Georgia", serif;
+  position : relative;
+}
+
+.titres_3::before {
+  content : '';
+  width : 100px;
+  height : 8px;
+  background-color : grey;
+  position : absolute;
+  bottom : -8px;
+}
+
+/*navigation */
+nav.nav {
+  display : flex;
+  list-style: none; 
+  margin: 30px 10px;
+  width : 380px; 
+  justify-content : space-between;
+   
+}
+
+nav.nav li{
+  color : white; 
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+nav.nav li a{
+  color : white; 
+  text-decoration: none;
+  
+}
+
+/*Présentation*/
+
+.Presentation,
+.mise_en_place,
+.Conclusion {
+  margin : 100px;
+}
+
+.txt_presentation {
+  display : flex;
+  justify-content: center;
+  margin : 50px 40px;
+}
+
+.description_carte {
+  display: flex;
+  justify-content: center;
+  margin : 50px 0px;
+}
+
+.img_description {
+  width: 600px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin : 0px auto;
+}
+
+.img_imprimante {
+  width: auto;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin : 0px auto;
+}
+
+.bloc_logo {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.img_logo {
+  height: 100px;
+  width: auto;
+}
+
+.bloc_img {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.img_esp {
+  height: 400px;
+  width: auto;
+}
+
+.cadre_description {
+  position : relative;
+  width : 600px;
+  height : 300px;
+  background-color: rgba(128, 128, 128, 0.175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  right : 200px;
+  top : 35px;
+  
+}
+
+.titre_txt_carte {
+  position: relative;
+  font-family: "Playfair Display", "Georgia", serif;
+  color : black;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  right : -100px;
+}
+
+.txt_carte {
+  position: relative;
+  font-family: "Playfair Display", "Georgia", serif;
+  color : black;
+  text-align: left;
+  font-size : 18px;
+  right : -100px;
+}
+
+.txt_gras {
+  font-weight: bold;
+}
+
+/*Mise en place*/
+
+
+.txt_mise_en_place {
+  display : flex;
+  justify-content: center;
+  margin : 50px 40px;
+}
+
+.alternance {
+  margin : 0px 130px;
+}
+
+/*Menus déroulants*/
+
+.menu_deroulant {
+  margin: 40px 20px;
+}
+
+.menu_deroulant summary {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.second {
+  margin : 40px 100px;
+}
+
+
+.contenu_menu {
+  margin-top: 25px;
+}
+
+.ligne_images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin : 20px auto;
+}
+
+/*Videos*/
+
+.ligne_videos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.bloc_video {
+  width: 45%;
+  min-width: 280px;
+}
+
+.video_grand_ecran {
+  position: relative;
+  margin: 0;
+}
+
+.bloc_video video {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.btn_grand_ecran {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: #333;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn_grand_ecran:hover {
+  background-color: rgba(180, 180, 180, 0.95);
+}
+
+.legende_video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 18px;
+  color: white;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+/*Pied de page*/
+
+.retour_start {
+  margin : 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lien {
+  background-color: rgba(200, 200, 200, 0.9);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  
+}

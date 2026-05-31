@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUT 1</title>
+  <link rel="stylesheet" href="css/style_BUT1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<script>
+  Fancybox.bind("[data-fancybox]", {});
+</script>
+
+<body>
+
+  <section class="haut_page" >
+    <header>
+      <img src="images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+      <nav class="nav">
+        <li>
+          <a href="page_accueil.html">Accueil</a>
+        </li>
+        <li>
+          <a href="BUT1.html">BUT 1</a>
+        </li>
+        <li>
+          <a href="BUT2.html">BUT 2</a>
+        </li>
+        <li>
+          <a href="Alternance.html">Alternance</a>
+        </li>
+      </nav>
+      <p class="name">Enzo Gautier</p>
+    </header>
+
+    <div class="accueil_page" id="debut_page">
+      <h1 class="titre_principal">BUT 1</h1>
+      <a class="scroll_down" href="#dest-scroll">
+        Scroll <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="liens-utiles" id="dest-scroll">
+    <div class="icones">
+      <a href="#compétences">
+        <i class="fa-solid fa-gears icones-liens"></i>
+      </a>
+      <p class="txt-icones">Compétences</p>
+    </div>
+
+    <div class="icones">
+      <a href="#sae">
+        <i class="fa-solid fa-screwdriver-wrench icones-liens"></i>
+      </a>
+      <p class="txt-icones">SAE</p>
+    </div>
+  </section>
+
+  <section class="Compétences" id="compétences">
+    <h2 class="titres_secondaires">Mes compétences</h2>
+  </section>
+
+  <section class = "bloc_compétence">
+        <div class="img_comp C1">
+            <div class="overlay">
+              <a 
+                data-fancybox="C1_B1"
+                data-caption="BUT1 - Référentiel compétences national"
+                href="images/BUT1_C1.png"
+                class="btn_hover">
+                Référentiel
+              </a>
+
+              <span class="separateur"></span>
+
+              <a 
+                href="evaluation_C1.html"
+                class="btn_hover">
+                Evaluation
+            </a>
+            </div>
+        </div>
+        <div class="img_comp C2">
+            <div class="overlay">
+              <a 
+                data-fancybox="C2_B1"
+                data-caption="BUT1 - Référentiel compétences national"
+                href="images/BUT1_C2.png"
+                class="btn_hover">
+                Référentiel
+              </a>
+
+              <span class="separateur"></span>
+
+              <a 
+                href="evaluation_C2.html"
+                class="btn_hover">
+                Evaluation
+            </a>
+            </div>
+        </div>
+  </section>
+
+  <section class="SAE" id="sae">
+    <h2 class="titres_secondaires">SAE</h2>
+    
+    <div class="lst_sae">
+
+      <div class="img_projets sae1">
+        <div class="detail_page">
+          <p class="nom_page">Variateur de lumière</p>
+          <a href="Var_lumière.html" class="lien">Accéder</a>
+          <p class="description">Optimiser au maximum confort / conso</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae2">
+        <div class="detail_page">
+          <p class="nom_page">Console rétro</p>
+          <a href="Console.html" class="lien">Accéder</a>
+          <p class="description">Un retour en enfance</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae3">
+        <div class="detail_page">
+          <p class="nom_page">Borne de recharge</p>
+          <a href="Borne.html" class="lien">Accéder</a>
+          <p class="description">Ma SAE énergie</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae4">
+        <div class="detail_page">
+          <p class="nom_page">Feux de circulation</p>
+          <a href="Feux_circulation.html" class="lien">Accéder</a>
+          <p class="description">Gérer la circulation dans un carrefour</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="retour_start">
+      <a href="#debut_page" class="lien">Retour
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

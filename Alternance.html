@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternance</title>
+  <link rel="stylesheet" href="css/style_pages_projets.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <section class="haut_page page_alternance" id="debut_page">
+    <header>
+      <img src="images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+      <nav class="nav">
+        <li>
+          <a href="page_accueil.html">Accueil</a>
+        </li>
+        <li>
+          <a href="BUT1.html">BUT 1</a>
+        </li>
+        <li>
+          <a href="BUT2.html">BUT 2</a>
+        </li>
+        <li>
+          <a href="Alternance.html">Alternance</a>
+        </li>
+      </nav>
+      <p class="name">Enzo Gautier</p>
+    </header>
+
+    <div class="accueil_site">
+      <h1 class="titre_principal">Mon alternance</h1>
+      <a class="scroll_down" href="#dest-scroll">
+        Scroll <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <main>
+    <section class="Presentation" id="dest-scroll">
+      <h2 class="titres_secondaires">Présentation</h2>
+      <div class="txt_presentation">
+        <p>L'objectif de cette page est de présenter les missions que j'ai pu avoir au cours de mes deux années d'alternance.
+          <br>
+          Durant la première année, j'ai réalisé une vidéo expliquant rapidement mon projet principal. C'est donc une
+          introduction idéale pour mieux comprendre les sujets que je vais aborder plus bas dans cette page.
+        </p>
+      </div>
+      <div class="ligne_videos" id="video-presentation">
+        <figure class="bloc_video video_grand_ecran">
+          <video playsinline preload="metadata" poster="images/img_alternance_page1.png" data-fullscreen-only>
+            <source src="videos/GAUTIER_E_LACTALIS.mp4" type="video/mp4">
+            Votre navigateur ne peut pas lire cette vidéo.
+          </video>
+          <button class="btn_grand_ecran" type="button" aria-label="Lire la vidéo en grand écran">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <figcaption class="legende_video">
+            Vidéo de présentation de mon alternance.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mise_en_place" id="arg_process">
+      <h2 class="titres_secondaires">Projets/missions</h2>
+
+      <details class="menu_deroulant">
+        <summary>Mon projet principal - 1ere année</summary>
+        <div class="contenu_menu">
+          <div class="titres_3">
+              Introduction
+            </div>
+          <div class="txt_mise_en_place alternance">
+            <p>Lorsque je suis arrivé à l'usine, un projet m'a été confié : La réarchitecture du réseau informatique de toute la 
+              partie logistique et traçabilité. Les points principaux, l'importance du secteur ainsi que les enjeux de mon projet 
+              ont déjà été abordés dans la <a href="#video-presentation">vidéo de présentation</a>.
+            </p>
+          </div>
+          <div class="titres_3">Présentation</div>
+          <div class="txt_mise_en_place alternance">
+            <p>Pour réaliser ce projet, j'ai du passer par plusieurs étapes. La particularité que j'ai rencontrer tout au long de
+              ce projet est que toutes ces étapes ne se sont pas faites les unes après les autres, mais plutôt en parallèle même si
+              la majeure partie de l'étude du projet s'est faite en amont. En revanche pour la réalisation, compte tenu du nombre de 
+              modifications plutôt conséquent, l'objectif principal était d'effectuer le maximum d'interventions avant la mise en service
+              du nouveau réseau informatique. Cela permettait de limiter la quantité de modifications à faire au moment de la migration et
+              donc de renforcer la fiabilité de notre mise en service.
+            </p>
+          </div>
+          <div class="titres_3">Etude du projet</div>
+          <div class="txt_mise_en_place alternance">
+            <p>Le premier défi que j'ai pu surmonter lors du lancement du projet était d'abord de repérer tous les équipements 
+              qui seraient nécessaires à mon nouveau réseau et donc de comprendre comment est ce que ça fonctionnait actuellement.
+              J'ai donc réalisé des schémas afin de modeliser le réseau actuel puis de représenté le réseau futur.<br>
+              Une fois que j'ai pu finir l'ensemble des schémas, il a fallu que je commence à rédiger un cahier des charges pour
+              le tirage complet des câbles, un défi intéressant car c'était la première fois que j'en rédigais un, j'avais pour 
+              habitude jusqu'ici à l'école d'y répondre plutôt que de l'écrire.
+            </p>
+          </div>
+          <div class="titres_3">Chiffrages</div>
+          <div class="txt_mise_en_place alternance">
+            <p>
+              Maintenant que mes besoins étaient bien spécifiés dans mon cahier des charges, j'ai pu commencer à contacter des 
+              entreprises extérieures pour faire un premier chiffrage puis comparer différents devis. S'en suit ensuite les
+              négociations puis pour finir le choix du collaborateur.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <details class="menu_deroulant">
+        <summary>Autres missions</summary>
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>En plus de mon projet principal, j'ai été amené à réaliser d'autres missions.</p>
+          </div>
+          <details class="menu_deroulant second">
+            <summary>Cockpit</summary>
+            <div class="txt_mise_en_place">
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details class="menu_deroulant">
+        <summary>Compétences développées</summary>
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Présentation des compétences techniques et professionnelles acquises au fil de cette expérience.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="Conclusion" id="Conclusion">
+      <h2 class="titres_secondaires">Conclusion</h2>
+      <div class="txt_presentation">
+        <p>Cette alternance me permet de mettre en pratique mes connaissances tout en découvrant le fonctionnement concret du monde professionnel.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="retour_start">
+    <a href="#debut_page" class="lien">Retour
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

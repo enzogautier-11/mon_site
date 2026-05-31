@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Enzo.G</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+
+</head>
+<body> 
+  <section class="haut_page" id="debut-site">
+    <header>
+      <img src="images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+      <nav class="nav">
+        <li>
+          <a href="page_accueil.html">Accueil</a>
+        </li>
+        <li>
+          <a href="BUT1.html">BUT 1</a>
+        </li>
+        <li>
+          <a href="BUT2.html">BUT 2</a>
+        </li>
+        <li>
+          <a href="Alternance.html">Alternance</a>
+        </li>
+      </nav>
+      <p class="name">Enzo Gautier</p>
+    </header>
+          
+    
+    <div class="accueil_site"> 
+      <h1 class = "titre_principal">Bienvenue sur mon Portfolio</h1>
+      <a class = "scroll_down" href="#dest-scroll">
+        Scroll <i class="fas fa-angle-down"></i>
+      </a>
+
+    </div>
+    
+  </section>
+
+  <section class = "liens-utiles" id="dest-scroll">
+    <div class = "icones">
+      <a href="#formation">
+        <i class = "fas fa-graduation-cap icones-liens"></i>
+      </a>
+      <p class = "txt-icones">Formation</p>
+    </div>
+    <div class = "icones">
+      <a href="#projets">
+        <i class = "fas fa-gear icones-liens"></i>
+      </a>
+      <p class = "txt-icones">Projets</p>
+    </div>
+    <div class = "icones">
+      <a href="#contact">
+        <i class = "fas fa-phone icones-liens"></i>
+      </a>
+      <p class = "txt-icones">Contact</p>
+    </div>
+  </section>
+
+  <section class = "Formation" id="formation">
+    <h2 class = "formation-titre">
+      Ma formation
+    </h2>
+    <div class="sous_pages">
+      <div class="img_annees a_1">
+        <div class="detail_page">
+          <p class="nom_page">BUT 1</p>
+          <a href="BUT1.html" class="lien">Accéder</a>
+          <p class="description">Ma première année de BUT GEII</p>
+        </div>
+      </div>
+      <div class="img_annees a_2">
+        <div class="detail_page">
+          <p class="nom_page">BUT 2</p>
+          <a href="BUT2.html" class="lien">Accéder</a>
+          <p class="description">Ma spécialisation en AII</p>
+        </div>
+      </div>
+      <div class="img_annees a_alter">
+        <div class="detail_page">
+          <p class="nom_page">Mon alternance</p>
+          <a href="Alternance.html" class="lien">Accéder</a>
+          <p class="description">Présentation de mon alternance</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="projets" id="projets">
+    <h2 class="projet-titre">
+      Mes projets personnels
+    </h2>
+    <div class="sous_pages">
+      <div class="img_projets p_1">
+        <div class="detail_page">
+          <p class="nom_page">Poulailler automatique</p>
+          <a href="poulailler.html" class="lien">Accéder</a>
+          <p class="description">Conception d'une porte de poulailler automatisée</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="Contact" id="contact">
+    <h2 class="contact-titre">
+      Me contacter
+    </h2>
+    <div class="icones-contact">
+      <div class="icones">
+        <i class = "fa-solid fa-envelope icones-liens" id="copier-mail">
+        </i>
+        <p class="titre_icones_contact">Mail</p>
+        <p class="descrpt_icones_contact">egautier263@gmail.com</p>
+      </div>
+      <div class="icones">
+        <a href="documents/CV.pdf" download>
+          <i class="fa-solid fa-file-lines icones-liens"></i>
+        </a>
+        <p class="titre_icones_contact">CV</p>
+        <p class="descrpt_icones_contact">Appuyez pour télécharger</p>
+      </div>
+      <div class="icones">
+        <a href="https://www.linkedin.com/in/enzo-gautier-hjkl235" target="_blank">
+          <i class = "fa-brands fa-linkedin icones-liens"></i>
+        </a>
+        <p class="titre_icones_contact">Linkedin</p>
+        <p class="descrpt_icones_contact">Ma page</p>
+      </div>
+    </div>
+    <div class="retour-start">
+      <a href="#debut-site" class="lien">Retour
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="pied-page">
+    
+    </div>
+    <p class="txt-fin-site">Mon portfolio</p>
+    
+    
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

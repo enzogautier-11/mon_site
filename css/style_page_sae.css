@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.name {
+  color : white;
+  text-align : right;
+  margin-left: auto;
+  margin-right: 30px;
+  font-size : 18px;
+  font-weight: 400;
+}
+
+* {
+  font-family : 'Montserrat';
+}
+
+header {
+  display : flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+header img {
+  width : 60px;
+  margin : 20px 40px;
+  height : auto;
+}
+
+body {
+  margin : 0 auto;
+}
+
+/* Debut pages */
+
+.haut_page {
+  background-size : cover;
+  height:  40vh;
+}
+
+.page_borne {
+    background : url('../images/borne/img_bornes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_console {
+    background : url('../images/console/img_console.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_feux {
+    background : url('../images/feux/img_sae_feux.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+.page_feux::after {
+  content : "";
+  position : absolute;
+  left : 0;
+  top : 0;
+  width : 100%;
+  height : 40vh;
+  background-color: rgba(125,125,125,0.4);
+}
+
+.page_variateur {
+    background : url('../images/variateur/img_SAE_variateur.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*/
+/*accueil*/
+
+.accueil_page {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.scroll_down {
+  color : white;
+  position: absolute;
+  text-decoration: none;
+  left: 50px;
+  bottom: 10px;
+  font-size: 20px;
+}
+
+.titre_principal {
+  color : white;
+  font-size: 110px;
+  font-weight: 700;
+  font-family : 'Abril Fatface';
+  width : auto;
+
+}
+
+.titres_secondaires {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: 100;
+  font-family: "Playfair Display", "Georgia", serif;
+  position : relative;
+}
+
+.titres_secondaires::before {
+  content : '';
+  width : 150px;
+  height : 10px;
+  background-color : rgb(160, 160, 239);
+  position : absolute;
+  bottom : -10px;
+}
+
+/*navigation */
+nav.nav {
+  display : flex;
+  list-style: none; 
+  margin: 30px 10px;
+  width : 380px; 
+  justify-content : space-between;
+   
+}
+
+nav.nav li{
+  color : white; 
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+nav.nav li a{
+  color : white; 
+  text-decoration: none;
+  
+}
+
+/*Présentation*/
+
+.Presentation {
+  margin : 100px;
+}
+
+.description_carte {
+  display: flex;
+  justify-content: center;
+  margin : 50px 0px;
+}
+
+.img_cartes {
+  width: 500px;
+  height: 300px;
+  background: url('../images/feux/Carte_feux.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cadre_description {
+  position : relative;
+  width : 600px;
+  height : 300px;
+  background-color: rgba(128, 128, 128, 0.175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  right : 200px;
+  top : 35px;
+  
+}
+
+.titre_txt_carte {
+  position: relative;
+  font-family: "Playfair Display", "Georgia", serif;
+  color : black;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+  right : -100px;
+}
+
+.txt_carte {
+  position: relative;
+  font-family: "Playfair Display", "Georgia", serif;
+  color : black;
+  text-align: left;
+  font-size : 18px;
+  right : -100px;
+}

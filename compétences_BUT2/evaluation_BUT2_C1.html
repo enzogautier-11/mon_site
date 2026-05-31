@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluation BUT2 C1</title>
+  <link rel="stylesheet" href="../css/style_evaluation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<body>
+  <main class="page_evaluation page_but2_eval" id="debut_page">
+    <section class="haut_page page_BUT2_C1">
+      <header>
+        <img src="../images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+        <nav class="nav">
+          <li>
+            <a href="../page_accueil.html">Accueil</a>
+          </li>
+          <li>
+            <a href="../BUT1.html">BUT 1</a>
+          </li>
+          <li>
+            <a href="../BUT2.html">BUT 2</a>
+          </li>
+          <li>
+            <a href="../Alternance.html">Alternance</a>
+          </li>
+        </nav>
+        <p class="name">Enzo Gautier</p>
+      </header>
+
+      <h1>C1</h1>
+    </section>
+    <div class="intro">
+      <h2 class="titres_secondaires">Référentiel</h2>
+    </div>
+
+    <section class="contenu_evaluation">
+      <div class="img_ref C1">
+        <a
+          class="overlay"
+          data-fancybox="C1_B1"
+          data-caption="BUT2 - Référentiel compétences national"
+          href="../images/BUT2_C1.png">
+          <span class="btn_hover">Référentiel</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="intro">
+      <h2 class="titres_secondaires">Argumentation</h2>
+    </div>
+
+    <section class="contenu_evaluation argumentation">
+      <div class="txt_evaluation">
+        <p>Durant cette année, j'ai pu m'améliorer en conception grâce à des projets personnels.
+          Je pense nottament à mon 
+          <a href="../poulailler.html">poulailler automatique</a> qui m'a permis de mettre en pratique 
+          de nombreuses compétences dont celle-ci. 
+        </p>
+      </div>
+      <details class="menu_deroulant">
+      <summary>Proposer des solutions techniques liées à l'analyse fonctionnelle</summary>
+        <div class="note_competence">
+        <span class="note_valeur">4/5</span>
+        <i class="fa-solid fa-star"></i>
+        </div>
+      <div class="contenu_menu">
+        <p>En analysant un dispositif existant, j'ai pu établir un premier cahier des charges.
+          C'est ensuite lors du choix des solutions techniques que j'allais adopter, que j'ai pu
+          commencer à réfléchir au dimensionnement de mon installation. Une des réflexions que j'ai
+          dû avoir à ce moment-là concernait le choix du moteur. J'ai donc dû prendre en compte
+          plusieurs choses comme le poids de la porte que j'allais devoir soulever ainsi que le temps
+          maximum auquel je devais l'ouvrir. J'ai donc sur feuille lister les contraintes puis grâce à
+          ça, j'ai pu commencer les recherches de moteur jusqu'à trouver un modèle adapté.
+        </p>
+        <p>
+          
+        </p>
+      </div>
+</details>
+<details class="menu_deroulant">
+      <summary>Dérisquer les solutions retenues</summary>
+        <div class="note_competence">
+        <span class="note_valeur">5/5</span>
+        <i class="fa-solid fa-star"></i>
+        </div>
+      <div class="contenu_menu">
+        <p>J'ai cependant rencontré des difficultées nottament avec mon controleur moteur car lors de 
+          mes recherches, j'ai oublié de prendre en compte le courant nécessaire au fonctionnement de 
+          mon moteur car en effet, à vitesse nominale, le moteur que j'avais choisi consommait plus
+          que le courant maximale autorisé par mon controleur. J'ai donc décidé de brider mon moteur
+          en lui fixant un PWM inférieur à 100%. Il reste néanmoins toujours un problème en cas de 
+          blocage de la porte qui pourrait engendrer un pic de courant qui grillerait malheuresement mon
+          controleur. J'ai donc décider d'encore diviser la force appliquer sur mon moteur grâce à un 
+          système de poulis. Malheuresement, je n'ai toujours pas trouvé de solution qui permttrait 
+          d'éliminer complètement le risque. 
+        </p>
+      </div>
+</details>
+
+    </section>
+    
+    <div class="retour_start">
+    <a href="#debut_page" class="lien">Retour
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+  </main>
+  <script>
+    if (window.Fancybox) {
+      Fancybox.bind("[data-fancybox]", {});
+    }
+  </script>
+
+</body>
+</html>

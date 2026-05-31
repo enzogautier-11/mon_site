@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;600;700&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.name {
+  color : white;
+  text-align : right;
+  margin-left: auto;
+  margin-right: 30px;
+  font-size : 18px;
+  font-weight: 400;
+}
+
+* {
+  font-family : 'Montserrat';
+}
+
+header {
+  display : flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+header img {
+  width : 60px;
+  margin : 20px 40px;
+  height : auto;
+}
+
+body {
+  margin : 0 auto;
+}
+
+/* Debut pages */
+
+section.haut_page {
+  background : url('../images/img_2eme_annee_page1.png');
+  background-size : cover;
+  height:  70vh;
+}
+
+/*accueil*/
+
+.accueil_page {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.scroll_down {
+  color : white;
+  position: absolute;
+  text-decoration: none;
+  left: 50px;
+  bottom: 10px;
+  font-size: 20px;
+}
+
+.titre_principal {
+  color : white;
+  font-size: 150px;
+  font-weight: 700;
+  font-family : 'Abril Fatface';
+  width : auto;
+
+}
+/*navigation */
+nav.nav {
+  display : flex;
+  list-style: none; 
+  margin: 30px 10px;
+  width : 380px; 
+  justify-content : space-between;
+   
+}
+
+nav.nav li{
+  color : white; 
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+nav.nav li a{
+  color : white; 
+  text-decoration: none;
+  
+}
+
+/* Liens utiles */
+
+.liens-utiles {
+  display :flex;
+  justify-content : center;
+  margin-top: 80px;
+  gap : 300px;
+}
+
+.icones {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icones-liens {
+  font-size : 50px;
+  color : black;
+  
+}
+.txt-icones {
+  font-weight: 600;
+}
+
+/* Sous pages */
+
+.Compétences {
+  margin :20px 100px;
+}
+
+.img_comp {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 300px;
+    min-height: 350px;
+    flex: 1 ;
+    margin : 20px;
+    overflow : hidden;
+    cursor : pointer;
+    transition : all 0.3s ease;
+}
+
+.C1 {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.C1::before {
+  content : "C1";
+  position : absolute;
+  inset : 0;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  color : white;
+  font-size : 100px;
+  font-weight : 600;
+  font-family: 'Abril Fatface';
+  pointer-events: none;
+
+}
+
+.C2 {
+  background-color : rgba(255, 165, 0, 0.7);
+}
+
+.C2::before {
+  content : "C2";
+  position : absolute;
+  inset : 0;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  color : white;
+  font-size : 100px;
+  font-weight : 600;
+  font-family: 'Abril Fatface';
+  pointer-events: none;
+
+}
+
+.C3 {
+  background-color : rgb(203, 203, 0);
+}
+
+.C3::before {
+  content : "C3";
+  position : absolute;
+  inset : 0;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  color : white;
+  font-size : 100px;
+  font-weight : 600;
+  font-family: 'Abril Fatface';
+  pointer-events: none;
+
+}
+
+.C4 {
+  background-color : green;
+}
+
+.C4::before {
+  content : "C4";
+  position : absolute;
+  inset : 0;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  color : white;
+  font-size : 100px;
+  font-weight : 600;
+  font-family: 'Abril Fatface';
+  pointer-events: none;
+
+}
+
+.overlay {
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background-color: rgba(0,0,0,0.6);
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  gap : 20px;
+  opacity : 0;
+  transition : opacity 0.3s ease;
+}
+
+.btn_hover {
+  padding : 10px 15px;
+  background-color: white;
+  color : black;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition : transform 0.2s;
+}
+
+.btn_hover:hover {
+    transform: scale(1.05);
+}
+
+.img_comp:hover .overlay {
+    opacity: 1;
+}
+
+.separateur {
+  width : 2px;
+  height : 50px;
+  background-color : white;
+  align-self: center;
+}
+
+._page {
+  display: flex;
+  background-color: #FFFFFFDF;
+  flex-direction: column;
+  justify-content: flex-start;
+  position : absolute;
+  bottom : 0;
+  width : 100%;
+  padding : 5px 15px;
+}
+
+.nom_page {
+  font-size : 24px;
+  font-weight: 600;
+}
+
+.lien {
+  background-color: rgba(200, 200, 200, 0.9);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: -50px;
+  margin-right: 40px;
+  
+}
+
+
+.description {
+  color : grey;
+  font-weight: 800;
+}
+
+
+.titres_secondaires {
+  font-size: 50px;
+  margin: 20px;
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 300;
+  position : relative;
+}
+
+.titres_secondaires::before {
+  content : '';
+  width : 150px;
+  height : 10px;
+  background-color : rgb(160, 160, 239);
+  position : absolute;
+  bottom : -10px;
+}
+
+.titres_3 {
+  font-size : 30px;
+  margin : 20px;
+  font-family: 'Abril Fatface';
+  font-weight: 200;
+  position: relative;
+}
+
+.titres_3::before {
+  content : '';
+  width : 250px;
+  height : 10px;
+  background-color : rgb(223, 223, 223);
+  position : absolute;
+  bottom : -10px;
+}
+
+.retour_start {
+  margin : 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pied-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-left : 70px;
+  
+}
+
+/*vloc compétences */
+
+.bloc_compétence {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin : 30px 30px;
+}
+
+/* SAE style */
+
+.SAE {
+  margin : 100px;
+}
+
+.lst_sae {
+  display: flex;
+  flex-wrap: wrap;
+  gap : 5%;
+}
+
+.detail_page {
+  background-color: #FFFFFFDF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position : absolute;
+  bottom : 0;
+  width : 100%;
+  padding : 5px 20px;
+}
+
+.detail_page p{
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+
+.img_projets {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 400px;
+    min-height: 350px;
+    flex: 1 ;
+    margin : 20px auto;
+}
+
+.sae1 {
+  background-image: url(../images/variateur/img_SAE_variateur.png);
+}
+
+.sae2 {
+  background-image: url(../images/console/img_lst_sae.png);
+}
+
+.sae3 {
+  background-image: url(../images/borne/img_bornes.png);
+}
+
+.sae4 {
+  background-image: url(../images/feux/img_sae_feux.png);
+}

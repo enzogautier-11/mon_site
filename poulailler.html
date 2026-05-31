@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet poulailler</title>
+  <link rel="stylesheet" href="css/style_pages_projets.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<body>
+  <section class="haut_page page_poulailler" id="debut_page">
+    <header>
+      <img src="images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+      <nav class="nav">
+        <li>
+          <a href="page_accueil.html">Accueil</a>
+        </li>
+        <li>
+          <a href="BUT1.html">BUT 1</a>
+        </li>
+        <li>
+          <a href="BUT2.html">BUT 2</a>
+        </li>
+        <li>
+          <a href="Alternance.html">Alternance</a>
+        </li>
+      </nav>
+      <p class="name">Enzo Gautier</p>
+    </header>
+
+    <div class="accueil_site"> 
+      <h1 class="titre_principal">Mon poulailler automatique</h1>
+      <a class="scroll_down" href="#dest-scroll">
+        Scroll <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <main>
+    <section class="Presentation" id="dest-scroll">
+      <h2 class="titres_secondaires">Présentation</h2>
+      <div class="txt_presentation">
+        <p>Cette année, mon grand-père a rencontré des difficultés avec ses poules qui ont subi 
+          plusieurs
+          attaques durant la nuit. J'ai donc eu pour idée de l'aider en concevant d'A à Z une porte de 
+          poulailler automatique.</p>
+      </div>
+    </section>
+
+    <section class="mise_en_place" id="arg_process">
+      <h2 class="titres_secondaires">Mise en place</h2>
+
+      <details class="menu_deroulant">
+        <summary>Étude et choix des composants</summary>
+
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Pour réaliser ce projet, j'ai dans un premier temps réalisé l'étude d'un système existant 
+              afin de récupérer des idées quant au fonctionnement de ma porte automatique. J'ai ensuite
+              fait l'inventaire de tous les composants que j'avais jugés nécessaires à la réalisation de 
+              ce projet.</p>
+          </div>
+          <div class="img_description">
+            <img src="images/poulailler/chiffrage.png" alt="Chiffrage" class="img_description">
+          </div>
+        </div>
+      </details>
+
+      <details class="menu_deroulant">
+        <summary>Conception de la carte électronique</summary>
+
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Une fois que j'ai eu une idée assez claire sur la manière dont j'allais réaliser mon projet 
+            et avec quoi, j'ai pu commencer à travailler sur la conception de la carte électronique.<br>
+            Pour cette partie, j'ai utilisé "KiCad", un logiciel
+            de conception de circuits imprimés sur lequel j'ai pu dans un premier temps réaliser 
+            le schéma électronique, pour ensuite passer au routage.
+            </p>
+          </div> 
+          <div class="img_description">
+            <img src="images/poulailler/schéma_carte_poulailler.png" alt="Carte électronique" class="img_description">
+          </div>
+          <div class="txt_mise_en_place">
+            <p>
+              Maintenant que j'avais rassemblé tous les composants et créé tous les systèmes logiques 
+              électroniques sur ma carte, je pouvais concevoir ce que l'on appelle le routage. Il
+              représente contrairement au schéma le véritable visuel de ma future carte avec toutes les 
+              contraintes physiques d'encombrement. C'est donc à ce moment que j'ai dû réfléchir 
+              à l'emplacement de chaque composant. Je pense notamment aux condensateurs que j'ai placés 
+              au plus proche de mes sources d'alimentation, cela permet de réduire plus efficacement 
+              les perturbations ou encore le connecteur jack que j'ai placé dans un angle de la carte qui
+              serait facilement accessible pour brancher le câble d'alimentation de la carte.
+            </p>
+          </div>
+          <div class="ligne_images">
+            <div class="img_description">
+            <img src="images/poulailler/routage_carte_principale.png" alt="Carte électronique" class="img_description">
+            </div>
+            <div class="img_description">
+            <img src="images/poulailler/routage_carte_ecran.png" alt="Carte électronique" class="img_description">
+            </div>
+          </div>
+          <div class="txt_mise_en_place">
+            <p>
+              Pour la suite, j'ai pu compter sur l'aide d'Éric (technicien de l'IUT), c'est à lui que
+              j'ai envoyé mes fichiers de conception et qui de son côté a imprimé les deux PCB sur carte.
+              Il a également effectué tous les perçages. Je n'avais plus qu'à réaliser toutes les soudures.
+            </p>
+          </div>
+          <div class="ligne_images">
+            <div class="img_description">
+            <img src="images/poulailler/soudures_carte_poulailler.png" alt="Carte électronique" class="img_description">
+            </div>
+            <div class="img_description">
+            <img src="images/poulailler/routage_carte_ecran.png" alt="Carte électronique" class="img_description">
+            </div>
+          </div>
+        </div>
+      </details>
+      <details class="menu_deroulant">
+        <summary>Conception 3D</summary>
+
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Pour la partie conception de pièces 3D, j'ai utilisé le logiciel Fusion 360 pour la modélisation puis 
+              mon imprimante BambuLab pour l'impression.
+            </p>
+          </div>
+          <div class="ligne_images">
+            <div class="img_description">
+            <img src="images/poulailler/logo_fusion.png" alt="Logo Fusion 360" class="img_description">
+            </div>
+            <div class="img_imprimante">
+            <img src="images/poulailler/imprimante_3D.png" alt="Imprimante 3D" class="img_imprimante">
+            </div>
+          </div>
+          <div class="txt_mise_en_place">
+            <p>Au total, j'ai dû concevoir 3 pièces, dont la plus importante qui est le boîtier dans lequel se trouve
+              l'ensemble des composants électroniques.<br>
+              Mis à part le boîtier, les pièces sont des pièces plutôt simples qui ne m'ont pas pris énormément de temps
+              à concevoir. 
+            </p>
+          </div>
+          <div class="ligne_videos">
+            <div class="bloc_video">
+            <video autoplay loop muted playsinline>
+              <source src="videos/test_visu_rouleau.mp4" type="video/mp4">
+            </video>
+            </div>
+            <div class="bloc_video">
+            <video autoplay loop muted playsinline>
+              <source src="videos/test_visu_rouleau.mp4" type="video/mp4">
+            </video>
+            </div>
+
+          </div>
+        </div>
+      </details>
+      <details class="menu_deroulant">
+        <summary>Programmation microcontrôleur</summary>
+
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Pour cette partie, j'ai pu travailler sur un logiciel que j'utilise très souvent qui est Visual Studio Code, 
+              c'est d'ailleurs avec ce même logiciel que j'ai codé entièrement ce site internet.
+            </p>
+          </div>
+          <div class="bloc_logo">
+          <img src="images/poulailler/logo_vs_code.png" alt="Logo Visual Studio Code" class="img_logo">
+          </div>
+          <div class="txt_mise_en_place">
+            <p>
+              Avant de commencer, il faut aussi savoir que le microcontrôleur que j'ai choisi est un ESP32, un microcontrôleur 
+              peu coûteux, qui s'adapte assez facilement à de nombreuses tâches et qui se code en langage C.
+            </p>
+          </div>
+          <div class="bloc_img">
+            <img src="images/poulailler/esp32.png" alt="ESP32" class="img_esp">
+          </div>
+        </div>
+      </details>
+      <details class="menu_deroulant">
+        <summary>Tests de fonctionnement</summary>
+
+        <div class="contenu_menu">
+          <div class="txt_mise_en_place">
+            <p>Pour réaliser ce projet, j'ai ...</p>
+          </div>
+          <div class="img_description">
+            <img src="images/poulailler/chiffrage.png" alt="Chiffrage" class="img_description">
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="Conclusion" id="Conclusion">
+      <h2 class="titres_secondaires">Conclusion</h2>
+      <div class="txt_presentation">
+        <p>Pour conclure, je dirais que ce projet m'a beaucoup plu de par la grande diversité de questions abordées. Cela m'a pris au final
+          plusieurs mois pour arriver à un système fonctionnel.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="retour_start">
+    <a href="#debut_page" class="lien">Retour
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if (window.Fancybox) {
+      Fancybox.bind("[data-fancybox]", {});
+    }
+  </script>
+
+</body>
+</html>

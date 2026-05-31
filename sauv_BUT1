@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUT 1</title>
+  <link rel="stylesheet" href="css/style_BUT1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<script>
+  Fancybox.bind("[data-fancybox]", {});
+</script>
+
+<body>
+
+  <section class="haut_page">
+    <header>
+      <img src="images/logo-iut-rennes-2017.png" alt="Logo de mon portfolio" class="logo">
+      <nav class="nav">
+        <li><a href="page_accueil.html">Accueil</a></li>
+        <li><a href="BUT1.html">BUT 1</a></li>
+        <li><a href="BUT2.html">BUT 2</a></li>
+      </nav>
+      <p class="name">Enzo Gautier</p>
+    </header>
+
+    <div class="accueil_page">
+      <h1 class="titre_principal">BUT 1</h1>
+      <a class="scroll_down" href="#dest-scroll">
+        Scroll <i class="fas fa-angle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="liens-utiles" id="dest-scroll">
+    <div class="icones">
+      <a href="#compétences">
+        <i class="fa-solid fa-gears icones-liens"></i>
+      </a>
+      <p class="txt-icones">Compétences</p>
+    </div>
+
+    <div class="icones">
+      <a href="#sae">
+        <i class="fa-solid fa-screwdriver-wrench icones-liens"></i>
+      </a>
+      <p class="txt-icones">SAE</p>
+    </div>
+  </section>
+
+  <section class="Compétences" id="compétences">
+    <h2 class="titres_secondaires">Mes compétences</h2>
+
+    <div class="img_grilles">
+      <div class="img_annees C1">
+        <div class="detail_page">
+          <p class="nom_page">Compétence C1</p>
+          <a 
+            data-fancybox="galery"
+            data-caption="BUT1 - Référentiel compétences national"
+            href="images/BUT1_C1.png"
+            class="lien">
+            Voir
+          </a>
+          <p class="description">BUT1 - Référentiel compétences national</p>
+        </div>
+      </div>
+
+      <div class="img_annees C2">
+        <div class="detail_page">
+          <p class="nom_page">Compétence C2</p>
+          <a 
+            data-fancybox="galery"
+            data-caption="BUT1 - Référentiel compétences national"
+            href="images/BUT1_C2.png"
+            class="lien">
+            Voir
+          </a>
+          <p class="description">BUT1 - Référentiel compétences national</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="auto_eval">
+    <h2 class="titres_3">Mon auto-evaluation</h2>
+
+    <div class="volet_C1">
+      <button class="btn_volet btn_C1">
+        Compétence C1 - Voir les details <span class="fleche_volet">⬇️</span>
+      </button>
+      <div class="contenu_volet">
+        <div class="bloc_auto_eval c1_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C1 - Je suis capable d'établir une analyse fonctionnelle d'un système simple.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai été amené à étudier et comprendre un cahier des charges. À partir de cela, 
+              j'ai dû comprendre les besoins du client pour pouvoir proposer des solutions techniques adaptées.<br>
+              <br>
+              Par exemple, dans notre première SAE "Variateur de lumière", le cahier des charges indiquait qu'il devait être possible 
+              de régler l'intensité de la lumière à travers deux modes (auto/manuel).
+              Il a donc fallu choisir puis installer plusieurs capteurs sur la carte, mais nous n'avions pas à les programmer. <br>
+
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+
+        <div class="bloc_auto_eval c1_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C1 - Je suis capable de réaliser un prototype pour des solutions techniques matériel et/ou logiciel.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai dû 
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+     
+
+        <div class="bloc_auto_eval c1_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C1 - Je suis capable de rédiger un dossier de fabrication à partir d’un dossier fourni.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai dû rédiger
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+      </div>
+    </div>  
+
+    <div class="volet_C2">
+      <button class="btn_volet btn_C2">
+        Compétence C2 - Voir les details <span class="fleche_volet">⬇️</span>
+      </button>
+      <div class="contenu_volet">
+        <div class="bloc_auto_eval c2_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C2 - Je suis capable d'établir une analyse fonctionnelle d'un système simple.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai été amené à étudier et comprendre un cahier des charges. À partir de cela, 
+              j'ai dû comprendre les besoins du client pour pouvoir proposer des solutions techniques adaptées.<br>
+              <br>
+              Par exemple, dans notre première SAE "Variateur de lumière", le cahier des charges indiquait qu'il devait être possible 
+              de régler l'intensité de la lumière à travers deux modes (auto/manuel).
+              Il a donc fallu choisir puis installer plusieurs capteurs sur la carte, mais nous n'avions pas à les programmer. <br>
+
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+
+        <div class="bloc_auto_eval c2_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C2 - Je suis capable de réaliser un prototype pour des solutions techniques matériel et/ou logiciel.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai dû 
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+     
+
+        <div class="bloc_auto_eval c2_content">
+          <div class="part_visible">
+            <p class="txt_visible">
+              C2 - Je suis capable de rédiger un dossier de fabrication à partir d’un dossier fourni.
+            </p>
+            <p class="note">4/5</p>
+            <div class="etoile">
+              <i class="fa fa-star gold"></i>
+            </div>
+          </div>
+
+          <div class="zone_cachee">
+            <div class="txt_cache">
+              Dans plusieurs SAE, j'ai dû rédiger
+            </div>
+          </div>
+
+          <button class="btn_deroulant">
+            Voir plus <span class="fleche">⬇️</span>
+          </button>
+        </div>
+      </div>
+
+  </section>
+
+  <section class="SAE" id="sae">
+    <h2 class="titres_secondaires">SAE</h2>
+    <div class="lst_sae">
+
+      <div class="img_projets sae1">
+        <div class="detail_page">
+          <p class="nom_page">Variateur de lumière</p>
+          <a href="Var_lumière.html" class="lien">Accéder</a>
+          <p class="description">Ma première SAE</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae2">
+        <div class="detail_page">
+          <p class="nom_page">Console rétro</p>
+          <a href="Console.html" class="lien">Accéder</a>
+          <p class="description">Ma deuxième SAE</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae3">
+        <div class="detail_page">
+          <p class="nom_page">Borne de recharge</p>
+          <a href="Borne.html" class="lien">Accéder</a>
+          <p class="description">Ma SAE énergie</p>
+        </div>
+      </div>
+
+      <div class="img_projets sae4">
+        <div class="detail_page">
+          <p class="nom_page">Feux de circulation</p>
+          <a href="Feux_circulation.html" class="lien">Accéder</a>
+          <p class="description">Ma SAE automatisme</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
