@@ -390,7 +390,7 @@ nav.nav li a{
 }
 
 .sae1 {
-  background-image: url(../images/variateur/img_SAE_variateur.png);
+  background-image: url(../images/img_cablage.png);
 }
 
 .sae2 {
@@ -398,9 +398,18 @@ nav.nav li a{
 }
 
 .sae3 {
-  background-image: url(../images/borne/img_bornes.png);
+  background-image: url(../images/digitalisation.png);
 }
 
 .sae4 {
   background-image: url(../images/feux/img_sae_feux.png);
+}
+
+.TP1 {
+  background-image: url(../images/usine_ecole.png);
+}
+
+.TP2 {
+  background-image: url(../images/plateau_robotique.png);
+  width: 50%;
 }

@@ -59,6 +59,128 @@ section.haut_page {
     background-repeat: no-repeat;
 }
 
+.page_sae_cablage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/img_cablage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_sae_regulation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/console/img_lst_sae.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_sae_digitalisation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/digitalisation.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_tp_usine {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/usine_ecole.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page_tp_robotique {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/plateau_robotique.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.SAE {
+  margin: 100px;
+}
+
+.lst_sae {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.detail_page {
+  background-color: #FFFFFFDF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.detail_page p {
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+.img_projets {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-width: 400px;
+  min-height: 350px;
+  flex: 1;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.TP2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/TP2_usine.png');
+}
+
+.TP2:hover .overlay {
+  opacity: 1;
+}
+
+.TP3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/TP3_usine.png');
+}
+
+.TP3:hover .overlay {
+  opacity: 1;
+}
+
+.TP4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/TP4_usine.jpg');
+}
+
+.TP4:hover .overlay {
+  opacity: 1;
+}
+
+.TP5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/TP5_usine.jpg');
+}
+
+.TP5:hover .overlay {
+  opacity: 1;
+}
+
+.documents_usine .overlay {
+  flex-direction: column;
+}
+
+.sous_titre_overlay {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.actions_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -186,6 +308,10 @@ nav.nav li a {
   position : relative;
 }
 
+.introduction {
+  margin: 100px 70px 50px;
+}
+
 .titres_secondaires::before {
   content : '';
   width : 150px;
@@ -207,6 +333,7 @@ nav.nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
   text-decoration: none;
@@ -229,6 +356,18 @@ nav.nav li a {
   background-image: url('../images/BUT2_C1.png');
 }
 
+.img_ref.C2 {
+  background-image: url('../images/BUT2_C2.png');
+}
+
+.img_ref.C3 {
+  background-image: url('../images/BUT2_C3.png');
+}
+
+.img_ref.C4 {
+  background-image: url('../images/BUT2_C4.png');
+} 
+
 .img_ref:hover .overlay {
   opacity: 1;
 }
@@ -240,6 +379,18 @@ nav.nav li a {
   text-decoration: none;
   font-weight: 600;
   border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.btn_hover:hover {
+  transform: scale(1.05);
+}
+
+.separateur {
+  width: 2px;
+  height: 50px;
+  background-color: white;
+  align-self: center;
 }
 
 /*Textes*/
