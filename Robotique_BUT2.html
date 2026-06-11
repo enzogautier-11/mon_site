@@ -33,8 +33,64 @@
       <h1>Robotique</h1>
     </section>
 
-    <section class="contenu_evaluation">
-      <p></p>
+    <section class="intro">
+      <div class="titres_secondaires introduction">Introduction</div>
+      <section class="contenu_evaluation">
+        <p>J'ai pu découvrir cette année le domaine de la robotique à travers des travaux pratiques sur des robots industriels 
+          Fanuc et ABB, mais également via des projets de simulation sur le logiciel Roboguide.
+        </p>
+      </section>
+    </section>
+
+    <section class="Presentation">
+      <div class="titres_secondaires">Présentation</div>
+      <div class="ligne_videos" id="video-presentation">
+        <figure class="bloc_video video_grand_ecran">
+          <video playsinline preload="metadata" poster="images/img_robotique.png" data-fullscreen-only>
+            <source src="videos/video_robotique.mov">
+            Votre navigateur ne peut pas lire cette vidéo.
+          </video>
+          <button class="btn_grand_ecran" type="button" aria-label="Lire la vidéo en grand écran">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <figcaption class="legende_video">
+            Vidéo de présentation de mes travaux en robotique.
+          </figcaption>
+        </figure>
+      </div>
+      <section class="contenu_evaluation">
+        <p>Lors de notre premier cycle, nous avons pu effectuer plusieurs TP de robotiques en alternant à chaque fois entre un 
+          robot FANUC et un robot ABB.<br>
+          Pour deux de ces TP, nous avions du réaliser une analyse fonctionnelle du système avant de pouvoir manipuler. L'objectif
+          était de réussir à reproduire une véritable analyse fonctionnelle que l'on pourrait retrouver dans l'industrie.<br>
+          On a donc dû se mettre à la place d'un intégrateur afin de répondre à un cahier des charges qui nous était donné.
+        </p>
+      </section>
+
+      <div class="titres_secondaires">Analyses fonctionnelles</div>
+
+      <div class="lst_sae">
+        <div class="img_projets TP_R_1">
+          <div class="overlay">
+            <p class="sous_titre_overlay">Analyse fonctionnelle TP 1</p>
+            <div class="actions_overlay">
+              <a href="documents/Analyse_TP_ABB.pdf" data-fancybox="documents_usine" class="btn_hover">Voir</a>
+              <span class="separateur"></span>
+              <a href="documents/Analyse_TP_ABB.pdf" download class="btn_hover">Télécharger</a>
+            </div>
+          </div>
+        </div>
+        <div class="img_projets TP_R_2">
+          <div class="overlay">
+            <p class="sous_titre_overlay">Analyse fonctionnelle TP 2</p>
+            <div class="actions_overlay">
+              <a href="documents/Analyse_TP_FANUC.pdf" data-fancybox="documents_usine" class="btn_hover">Voir</a>
+              <span class="separateur"></span>
+              <a href="documents/Analyse_TP_FANUC.pdf" download class="btn_hover">Télécharger</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="retour_start">
@@ -43,5 +99,6 @@
       </a>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

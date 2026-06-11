@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -159,6 +163,22 @@ section.haut_page {
 }
 
 .TP5:hover .overlay {
+  opacity: 1;
+}
+
+.TP_R_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/img_robot_fanuc.png');
+}
+
+.TP_R_1:hover .overlay {
+  opacity: 1;
+}
+
+.TP_R_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/img_robot_abb.png');
+}
+
+.TP_R_2:hover .overlay {
   opacity: 1;
 }
 
@@ -400,6 +420,10 @@ nav.nav li a {
   margin: 20px auto;
 }
 
+.Presentation {
+  margin: 100px;
+}
+
 
 /*Menu déroulant*/
 .menu_deroulant {
@@ -438,6 +462,69 @@ nav.nav li a {
 
 .note_valeur {
   font-size: 18px;
+}
+
+/*Videos*/
+
+.ligne_videos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.bloc_video {
+  width: 45%;
+  min-width: 280px;
+}
+
+.video_grand_ecran {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #111;
+}
+
+.bloc_video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn_grand_ecran {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 0.9);
+  color: #333;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn_grand_ecran:hover {
+  background-color: rgba(180, 180, 180, 0.95);
+}
+
+.legende_video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 18px;
+  color: white;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
 }
 
 /*Retour haut de page*/
