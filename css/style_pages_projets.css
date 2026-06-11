@@ -322,7 +322,7 @@ nav.nav li a{
   background-color: rgba(200, 200, 200, 0.9);
   color: #333;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 700;  
 }
 
 .btn_grand_ecran:hover {
